@@ -1,0 +1,329 @@
+/* ============================================================
+   LILY AT LARGE — Neo-Brutalism Theme
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --black: #0a0a0a;
+  --white: #fafaf7;
+  --yellow: #f5e642;
+  --border: 2.5px solid var(--black);
+  --shadow: 4px 4px 0px var(--black);
+  --shadow-lg: 6px 6px 0px var(--black);
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Typography ---- */
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+h3 { font-size: 1.35rem; }
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.4rem;
+  max-width: 68ch;
+}
+
+a {
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+a:hover {
+  background-color: var(--yellow);
+}
+
+/* ---- Layout ---- */
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---- Header ---- */
+
+.site-header {
+  border-bottom: var(--border);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.site-logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  background: var(--yellow);
+  border: var(--border);
+  padding: 0.25rem 0.65rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+}
+
+.site-logo:hover {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+  background-color: var(--yellow);
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  background: none;
+}
+
+/* ---- Hero (homepage) ---- */
+
+.hero {
+  padding: 5rem 0 4rem;
+  border-bottom: var(--border);
+}
+
+.hero-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: var(--border);
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 1.5rem;
+  background: var(--black);
+  color: var(--white);
+}
+
+.hero h1 {
+  margin-bottom: 1.25rem;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #333;
+  margin-bottom: 2rem;
+  max-width: 58ch;
+}
+
+/* ---- Card (blog list) ---- */
+
+.post-list {
+  padding: 3rem 0;
+}
+
+.post-list h2 {
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: var(--border);
+}
+
+.post-card {
+  border: var(--border);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  background: var(--white);
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.post-card:hover {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+  background: var(--yellow);
+}
+
+.post-card-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.post-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+}
+
+.post-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0;
+  max-width: none;
+}
+
+/* ---- Article ---- */
+
+.article-wrapper {
+  padding: 3rem 0 5rem;
+}
+
+.article-meta {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: var(--border);
+}
+
+.article-meta .tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: var(--border);
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 1rem;
+  background: var(--yellow);
+}
+
+.article-meta h1 {
+  margin-bottom: 0.75rem;
+}
+
+.article-meta .date {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.article-body {
+  max-width: 68ch;
+}
+
+.article-body h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1rem;
+  padding-top: 1rem;
+}
+
+.article-body h2:first-child {
+  margin-top: 0;
+}
+
+.article-body p {
+  margin-bottom: 1.4rem;
+}
+
+.article-body strong {
+  font-weight: 700;
+}
+
+.article-body em {
+  font-style: italic;
+}
+
+.article-body hr {
+  border: none;
+  border-top: var(--border);
+  margin: 2.5rem 0;
+}
+
+.article-body blockquote {
+  border-left: 4px solid var(--black);
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  background: #f0efe9;
+}
+
+/* ---- Footer ---- */
+
+.site-footer {
+  border-top: var(--border);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-footer p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  font-family: var(--font-mono);
+}
+
+/* ---- Draft banner ---- */
+.draft-banner {
+  background: var(--yellow);
+  border-bottom: var(--border);
+  text-align: center;
+  padding: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 600px) {
+  .site-nav { gap: 1rem; }
+  .hero { padding: 3rem 0 2.5rem; }
+}

@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const isDraft = post.data.draft;
+---
+
+<Layout title={post.data.title} description={post.data.description}>
+  {isDraft && (
+    <div class="draft-banner">⚠ DRAFT — not published yet</div>
+  )}
+  <div class="article-wrapper">
+    <div class="container">
+      <div class="article-meta">
+        <span class="tag">Essay</span>
+        <h1>{post.data.title}</h1>
+        <span class="date">
+          {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </span>
+      </div>
+      <div class="article-body">
+        <Content />
+      </div>
+    </div>
+  </div>
+</Layout>
