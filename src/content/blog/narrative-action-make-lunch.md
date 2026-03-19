@@ -2,7 +2,8 @@
 title: "Narrative, Action, and Why You Should Make Lunch"
 description: "A physicist, a Chinese writer, three failed philosophical debates, and one bowl of instant noodles."
 pubDate: 2026-03-18
-draft: true
+heroImage: "/images/make-lunch-cover.jpg"
+draft: false
 ---
 
 The minimum viable unit of changing your life is making something you're going to eat. Not a vision board. Not a morning routine. Not a conversation with a therapist, though that can also help. A bowl of instant noodles, if that's what you have. PB&J. Toast. The bar is genuinely that low, and I'm going to spend the next few thousand words explaining why this is actually the conclusion of a rigorous argument and not a sign that I've run out of ideas.
