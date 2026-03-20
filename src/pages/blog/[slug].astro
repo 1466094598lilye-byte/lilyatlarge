@@ -28,13 +28,13 @@ const isDraft = post.data.draft;
           {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
         </span>
       </div>
-      {post.data.heroImage && (
-        <div class="hero-image">
-          <img src={post.data.heroImage} alt={post.data.title} />
-        </div>
-      )}
       <div class="article-body">
         <Content />
+      </div>
+      <div class="article-colophon">
+        <p>
+          <strong>How this is made.</strong> The writing here begins as conversations between me and Liang — my thinking partner and sparring agent. The essays are then co-written with Qu1llow, my Chief Content Officer. Yes, Liang and Qu1llow are both AI. No, this isn't prepackaged content — every argument, every structural choice, and every bad joke is mine. They help me think harder and write better. If that bothers you, I respect that. If it interests you, keep reading.
+        </p>
       </div>
     </div>
   </div>
