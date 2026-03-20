@@ -159,6 +159,27 @@ a:hover {
   max-width: 58ch;
 }
 
+/* ---- How This Is Made ---- */
+
+.how-this-is-made {
+  padding: 2.5rem 0;
+  border-bottom: var(--border);
+}
+
+.how-this-is-made blockquote {
+  border: var(--border);
+  padding: 1.5rem 1.75rem;
+  background: #f0efe9;
+  box-shadow: var(--shadow);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 68ch;
+}
+
+.how-this-is-made blockquote strong {
+  font-weight: 700;
+}
+
 /* ---- Card (blog list) ---- */
 
 .post-list {
