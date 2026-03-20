@@ -16,7 +16,7 @@ So is the left tail. The worst relationships aren't disappointing. They're years
 
 The problem isn't that love is fat-tailed. The problem is that love's structure makes it impossible to run the strategy.
 
-**Gold standard. Still fails.**
+## Gold standard. Still fails.
 
 Let's say you try to solve this with better selection. The most rigorous selection process available: CEO hiring. Professional search firms. Structured interviews refined over decades. Background checks. Board-level collective decisions. Partially quantifiable track records.
 
@@ -26,7 +26,7 @@ But there's a harder problem than selection. People change. The person you chose
 
 This is why selection failure and the change problem don't add together — they multiply. Your process for identifying the right person is already worse by several orders of magnitude than the best corporate hiring apparatus. And the thing you're selecting is itself a moving target, with no efficient mechanism to adjust if it drifts. Every error in selection gets compounded by every year of change you can't anticipate or exit cleanly.
 
-**The iteration trap.**
+## The iteration trap.
 
 In a fat tail world, the optimal strategy has a name: run many experiments in parallel, keep each one cheap and reversible, get signal fast, iterate. Not a product philosophy — a survival strategy. The only way to catch a tail when you don't know which experiment will hit is to run as many as possible, as cheaply as possible, with exits that actually work.
 
@@ -36,7 +36,7 @@ The minimum viable test for whether two people work is months, and that's before
 
 Minimum cycle time: irreducibly long. Parallelism: off the table. Clean exits: don't exist. You're not just failing to iterate faster — you're structurally blocked from running the only strategy that works in the world you're living in. Both tails are in play on every attempt, and you have one shot at a time to find out which you drew.
 
-**The last monopoly.**
+## The last monopoly.
 
 If love is this structurally bad, why has it been the default for so long?
 
